@@ -1,4 +1,4 @@
-package com.ntr1x.treasure.web.resources;
+package com.ntr1x.storage.tests;
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -10,8 +10,10 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.ntr1x.storage.app.App;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(/*classes = App.class, */webEnvironment = WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = App.class, webEnvironment = WebEnvironment.RANDOM_PORT)
 @TestPropertySource({
 	"classpath:application.properties",
 	"classpath:application-test.properties"
