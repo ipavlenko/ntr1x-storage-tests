@@ -15,8 +15,8 @@ import com.ntr1x.storage.app.App;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = App.class, webEnvironment = WebEnvironment.RANDOM_PORT)
 @TestPropertySource({
-	"classpath:application.properties",
-	"classpath:application-test.properties"
+    "classpath:application.properties",
+    "classpath:application-test.properties"
 })
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class UserResourceTest {
@@ -49,7 +49,7 @@ public class UserResourceTest {
 //            
 //            IUserService.CreateUser s = new IUserService.CreateUser(); {
 //                
-//            	s.origin = "local";
+//                s.origin = "local";
 //                s.confirmed = true;
 //                s.email = "admin@example.com";
 //                s.identity = "";
